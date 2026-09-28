@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <main class="firstDiv">
+            <div class="boxCounter">
+                <div class="boxCounterThree">
+                    <h4>Earned Today</h4>
+                    <h2 id="earnedCount" class="earnedText">+2000</h2>
+                </div>
+                <div class="boxCounterThree">
+                    <h4>Spent Today</h4>
+                    <h2 id="spentCount" class="spendText">-500</h2>
+                </div>
+                <div class="boxCounterThree">
+                    <h4>Current Balance</h4>
+                    <h2 id="currentCount">7000</h2>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="earnedButton">+ Add Money</button>
+                <button id="expensButton">+ Add Expense</button>
+            </div>
+        </main>
+
+        <footer class="histroy">
+            <h5>History</h5>
+            <div id="box"></div>
+        </footer>
+    </header>
+
+    <!--ДОДАВАННЯ ГРОШЕЙ -->
+    <div id="income" class="modal-form">
+        <h3>New Income</h3>
+        <label for="incomeNameInput">Name: </label>
+        <input type="text" id="incomeNameInput" placeholder="e.g. Salary">
+
+        <label for="incomeNumberInput">Amount: </label>
+        <input type="number" id="incomeNumberInput" placeholder="1000">
+
+        <label for="incomeDescriptionInput">Description: </label>
+        <input type="text" id="incomeDescriptionInput" placeholder="Monthly payment">
+
+        <button id="addIncomeButton" class="btn-submit btn-income">Add income</button>
+    </div>
+
+    <!-- ВІДНІМАННЯ ГРОШЕЙ -->
+    <div id="expense" class="modal-form">
+        <h3>New Expense</h3>
+        <label for="nameInput">Name: </label>
+        <input type="text" id="nameInput" placeholder="e.g. Coffee">
+
+        <label for="numberInput">Amount: </label>
+        <input type="number" id="numberInput" placeholder="45">
+
+        <label for="descriptionInput">Description: </label>
+        <input type="text" id="descriptionInput" placeholder="small description">
+
+        <button id="addExpenseButton" class="btn-submit btn-expense">Add expense</button>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
